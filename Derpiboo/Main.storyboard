@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="2A8-vz-cyb" kind="relationship" relationship="viewControllers" id="z3L-SP-Oxb"/>
+                        <segue destination="Q96-xa-SNd" kind="relationship" relationship="viewControllers" id="Og2-HP-9N5"/>
+                        <segue destination="8Rw-7G-U0E" kind="relationship" relationship="viewControllers" id="OlP-iQ-2zl"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-258" y="0.0"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="lvq-L2-6Ph">
+            <objects>
+                <navigationController id="2A8-vz-cyb" customClass="HomeVC" customModule="Derpiboo" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="HomeIcon" id="S14-6y-Td9"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7xe-AS-PGU">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="88g-el-9qx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="604" y="-345"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Hdr-FY-Myj">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tUG-M8-c8o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8Rw-7G-U0E" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="more" id="L2V-iQ-ysf"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fz9-nE-zfX">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="sM9-Mw-Lab" kind="relationship" relationship="rootViewController" id="SjL-ro-KOd"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="604" y="394"/>
+        </scene>
+        <!--SearchTab-->
+        <scene sceneID="Ddw-XM-iFr">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SearchTab" id="Q96-xa-SNd" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="X8r-Ed-qGK"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7OG-2i-uRt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="828" y="-0.44977511244377816"/>
+        </scene>
+        <!--Menus-->
+        <scene sceneID="ZQa-8H-Hf1">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4xE-cg-bHL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="Menus" id="sM9-Mw-Lab" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="YHu-BI-0K3"/>
+                </viewControllerPlaceholder>
+            </objects>
+            <point key="canvasLocation" x="1273" y="393"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="HomeIcon" width="25" height="25"/>
+    </resources>
+</document>
